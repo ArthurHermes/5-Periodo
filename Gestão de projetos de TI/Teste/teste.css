@@ -1,0 +1,71 @@
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    gap: 8px;
+}
+
+    
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 11 / span 11;
+
+    position: sticky;
+    top: 0;
+    align-self: start;
+}
+
+.div1 > h1{
+    position: sticky;
+    top: 0;
+    align-self: start;
+}
+
+.div1 > h1, .div1 > p{
+    font-weight: bold;
+    text-align: center;
+}
+
+.div1 > p{
+    font-size: 1.5em;
+}
+
+.div2 {
+    grid-column: span 4 / span 4;
+    grid-row: span 6 / span 6;
+    grid-column-start: 3;
+}
+
+.div3 {
+    grid-column: span 4 / span 4;
+    grid-row: span 5 / span 5;
+    grid-column-start: 3;
+    grid-row-start: 7;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 11 / span 11;
+    grid-column-start: 7;
+    grid-row-start: 1;
+
+    position: sticky;
+    top: 0;
+    align-self: start;
+}
+
+.div4 > h1{
+    position: sticky;
+    top: 0;
+    align-self: start;
+}
+
+.div4 > h1, .div4 > p{
+    font-weight: bold;
+    text-align: center;
+}
+
+.div4 > p{
+    font-size: 1.5em;
+}
